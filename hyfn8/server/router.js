@@ -13,7 +13,7 @@ module.exports = function(app) {
       const ads_response = response.body;
 
     }).then(function(ads_response) {
-      request(ROOT_URL + campaign_id + '/insights?fields=impressions%2Creach%2Cfrequency%2Ccpm%2Cspend%2Cctr%2Ccost_per_inline_link_click%2Cactions%2Ccost_per_action_type%2Ccall_to_action_clicks&access_token=' + access_token, function(err, response, body) {
+      request(ROOT_URL + campaign_id + '/insights?fields=campaign_id%2Cimpressions%2Creach%2Cfrequency%2Ccpm%2Cspend%2Cctr%2Ccost_per_inline_link_click%2Cactions%2Ccost_per_action_type%2Ccall_to_action_clicks&access_token=' + access_token, function(err, response, body) {
 
         if (!err && response.statusCode == 200) {
           const metrics_response = JSON.parse(response.body);

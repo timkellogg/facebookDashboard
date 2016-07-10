@@ -3,6 +3,7 @@
 module.exports = {
   /**
     * Method that handles the merging of ads and campaign information
+    * TODO: convert imperative style to functional
   */
   process: function(unprocessed_data) {
     if (unprocessed_data == null) return [];
@@ -15,17 +16,18 @@ module.exports = {
 
         // TODO: refactor!
         for (let prop in metric) {
-          if (prop === 'campaign_id') {
+          if (prop == 'campaign_id') {
             unprocessed_data.ads.data.forEach(function(ad) {
               if (ad.campaign_id == metric[prop]) {
-                metric_object['name'] = ad.name;
-                return;
+                return metric_object['ad_name'] = ad.name;
               }
             });
           } else if (prop == 'actions') {
             metric_object['actions:link_click'] = metric[prop][0].value;
           } else if (prop == 'cost_per_action_type') {
             metric_object['cost_per_action_type:link_click'] = metric[prop][0].value;
+          } else if (prop == 'date_start' || prop == 'date_start') {
+            break;
           } else {
             metric_object[prop] = metric[prop];
           }

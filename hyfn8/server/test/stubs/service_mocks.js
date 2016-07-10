@@ -37,6 +37,7 @@ module.exports.valid_metric_response = {
         }
       ],
       "call_to_action_clicks": 0,
+      "campaign_id": "6059055869451",
       "date_start": "2016-06-11",
       "date_stop": "2016-07-10"
     }
@@ -67,6 +68,7 @@ module.exports.valid_ads_response = {
 };
 
 module.exports.valid_joined_response = {
+  "ad_name": "Default name - Website Clicks",
   "impressions": "3371",
   "reach": 3004,
   "frequency": 1.1221704394141,
@@ -77,6 +79,4 @@ module.exports.valid_joined_response = {
   "actions:link_click": 12,
   "cost_per_action_type:link_click": 0.38833333333333,
   "call_to_action_clicks": 0,
-  "date_start": "2016-06-11",
-  "date_stop": "2016-07-10"
 };

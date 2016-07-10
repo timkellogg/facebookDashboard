@@ -3,7 +3,7 @@ var express = require('express');
 
 var app = require('../../server.js');
 
-describe('controller: authentication', () => {
+describe('routing:', () => {
   beforeEach((done) => {
     server = require('../../server.js');
     done();
