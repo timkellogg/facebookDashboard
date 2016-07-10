@@ -14,3 +14,5 @@ const port = process.env.PORT || 3090;
 const server = http.createServer(app);
 server.listen(port);
 console.log('Node up on', port);
+
+module.exports = app;
