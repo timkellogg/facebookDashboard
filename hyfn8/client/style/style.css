@@ -562,3 +562,9 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 .public_Scrollbar_faceActive:after {
   background-color: #7d7d7d;
 }
+
+
+.fixedDataTableLayout_rowsContainer,
+.spreadsheet {
+  min-width: 500px;
+}

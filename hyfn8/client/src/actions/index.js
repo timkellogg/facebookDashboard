@@ -4,7 +4,7 @@ import axios from 'axios';
 export function fetchData() {
   // TODO: add error handling as a separate dispatch action
   // will requiring the redux-thunk middleware
-  const response = axios.get('http://localhost:3090/facebook')
+  const response = axios.get('https://sleepy-temple-18675.herokuapp.com/facebook')
     .catch((err) => { console.warn(err); });
 
   return {

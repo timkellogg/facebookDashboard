@@ -35,7 +35,7 @@ class Spreadsheet extends Component {
   }
 
   calculateColumnWidth(length) {
-    return length * 15;
+    return length * 20;
   }
 
   render() {
